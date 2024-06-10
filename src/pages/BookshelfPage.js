@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import BookCard from '../components/BookCard';
+import SelfBookCard from '../components/SelfBookCard';
 import './BookshelfPage.css';
 
 const BookshelfPage = () => {
@@ -15,7 +15,7 @@ const BookshelfPage = () => {
       <h1>My Bookshelf</h1>
       <div className="bookshelf">
         {bookshelf.map((book, index) => (
-          <BookCard key={index} book={book} />
+          <SelfBookCard key={index} book={book} />
         ))}
       </div>
     </div>

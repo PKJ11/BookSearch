@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const BookCard = ({ book, onAdd }) => (
+const SelfBookCard = ({ book, onAdd }) => (
   <div className="book-card">
     <img src={book.cover_img} alt={book.title} className="book-cover" />
     <div className="book-details">
       <h3>{book.title}</h3>
       <p>{book.author_name ? book.author_name.join(', ') : 'Unknown Author'}</p>
       {book.edition && <p>Edition: {book.edition}</p>}
-      <button onClick={() => onAdd(book)}>Add to Bookshelf</button>
+      
     </div>
   </div>
 );
 
-BookCard.propTypes = {
+SelfBookCard.propTypes = {
   book: PropTypes.shape({
     cover_img: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
@@ -23,4 +23,4 @@ BookCard.propTypes = {
   onAdd: PropTypes.func.isRequired,
 };
 
-export default BookCard;
+export default SelfBookCard;

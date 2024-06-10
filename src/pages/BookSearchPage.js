@@ -3,12 +3,11 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import BookCard from '../components/BookCard';
 import './BookSearchPage.css';
 
-const coverImg = '/path/to/default/cover/image.jpg'; // Replace with your default cover image path
-
+const coverImg = '/path/to/default/cover/image.jpg'; 
 const BookSearchPage = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -63,7 +62,7 @@ const BookSearchPage = () => {
 
   useEffect(() => {
     fetchBooks();
-    fetchBestsellers(); // Fetch bestsellers for the carousel
+    fetchBestsellers(); 
   }, []);
 
   const addToBookshelf = (book) => {
