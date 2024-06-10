@@ -1,0 +1,167 @@
+:root {
+  --background-color-light: #f5f5f5;
+  --text-color-light: #000000;
+  --background-color-dark: #0a0e27;
+  --text-color-dark: #ffffff;
+  --button-background-color: #4a90e2;
+  --button-hover-background-color: #357ab8;
+}
+
+.light {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+}
+
+.dark {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+}
+
+.book-search-page {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.carousel-container {
+  height: 50vh; /* Set carousel height to 50% of the viewport height */
+  margin-bottom: 20px;
+}
+
+.carousel-item img {
+  height: 100%; /* Ensure the image takes the full height of the carousel container */
+}
+
+.search-bar-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.all-books-heading {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.bookshelf-button {
+  background-color: var(--button-background-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+.bookshelf-button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+.theme-toggle-button {
+  background-color: var(--button-background-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+/* Card Styles */
+.book-card {
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; 
+  height: 400px; 
+  cursor: pointer;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-cover {
+  width: 100%;
+  height: 60%; /* Maintain aspect ratio similar to screenshot */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.book-details {
+  text-align: center;
+}
+
+.book-details h3 {
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 14px; /* Adjust font size */
+}
+
+.book-details p {
+  color: #b0b0b0;
+  font-size: 12px; /* Adjust font size */
+}
+
+.book-details button {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-details button:hover {
+  background-color: #357ab8;
+}
+.carousel-container {
+  width: 100%;
+  /* max-width: 1000px;  */
+  margin: 20px auto;
+
+}
+
+.carousel-item img {
+  height: 500px; /* Adjust height to match your design */
+  object-fit: cover;
+}
+
+.legend {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
