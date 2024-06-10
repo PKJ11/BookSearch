@@ -107,6 +107,9 @@ const BookSearchPage = () => {
           onChange={handleSearchInputChange}
           className="search-bar"
         />
+        <button className="bookshelf-button" onClick={() => window.location.href = '/bookshelf'}>
+        Go to My Bookshelf
+      </button>
       </div>
       <h2 className="all-books-heading">All Books</h2>
       <div className="search-results">
@@ -115,9 +118,7 @@ const BookSearchPage = () => {
         ))}
       </div>
 
-      <button className="bookshelf-button" onClick={() => window.location.href = '/bookshelf'}>
-        Go to My Bookshelf
-      </button>
+      
 
       <ToastContainer />
     </div>

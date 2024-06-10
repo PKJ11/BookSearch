@@ -25,12 +25,13 @@
 }
 
 .carousel-container {
-  height: 50vh; /* Set carousel height to 50% of the viewport height */
+  height: 50vh; 
   margin-bottom: 20px;
+  height: fit-content;
 }
 
 .carousel-item img {
-  height: 100%; /* Ensure the image takes the full height of the carousel container */
+  height: 100%; 
 }
 
 .search-bar-container {
@@ -54,9 +55,9 @@
 }
 
 .search-results {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
   padding: 0 20px;
 }
 
